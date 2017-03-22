@@ -10,28 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.myfirstapp.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="@string/button_send"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RelativeOverlap" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText"
+        android:hint="@string/edit_message"
+        android:maxLines="1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="@string/edit_message"
-        android:maxLines="1" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="@string/button_send"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText"
-        android:layout_alignBottom="@+id/editText" />
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
