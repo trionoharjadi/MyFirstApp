@@ -15,20 +15,22 @@
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:text="@string/button_send"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_alignBaseline="@+id/editText"
         android:layout_alignBottom="@+id/editText"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        tools:ignore="RelativeOverlap" />
+        android:layout_alignParentEnd="true" />
 
     <EditText
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText"
         android:hint="@string/edit_message"
         android:maxLines="1"
+        android:layout_width="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
