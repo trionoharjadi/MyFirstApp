@@ -28,10 +28,11 @@
         android:id="@+id/button"
         android:text="@string/button_send"
         tools:ignore="RelativeOverlap"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginRight="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_alignBottom="@+id/editText" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="sendMessage (MainActivity)" />
 
 </RelativeLayout>
